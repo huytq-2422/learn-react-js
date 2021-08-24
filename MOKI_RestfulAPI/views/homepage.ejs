@@ -1,0 +1,40 @@
+<div id="main">
+	<div>
+		My token:
+		<input type="text" id="my-token">
+		<button id="update-token" onclick="updateToken()">Update</button>
+	</div>
+	<div>
+		My name:
+		<input type="text" id="my-name">
+		<!-- <button id="update-name">Update</button> -->
+	</div>
+	<h1>Users online</h1>
+	<div>
+		<select id="users-list" size="5"></select>
+		<!-- <button id="private-msg-button">Send private message to selected user</button> -->
+		<div id="convos"></div>
+	</div>
+	<h1>Chat rooms</h1>
+	<div>
+		<select id="rooms-list" size="5"></select>
+		<!-- <button id="join-room">Join selected room</button>
+		<button id="new-room">Start a new room</button> -->
+		<div id="rooms"></div>
+	</div>
+</div>
+<div id="disconnect" style="display:none">Waiting for reconnect...</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyBGBYo0wInOG2-JxpcaANk69-fIe0svQaM",
+		authDomain: "moki-42e04.firebaseapp.com",
+		databaseURL: "https://moki-42e04.firebaseio.com",
+		projectId: "moki-42e04",
+		storageBucket: "moki-42e04.appspot.com",
+		messagingSenderId: "370540103976"
+	};
+	firebase.initializeApp(config);
+</script>
