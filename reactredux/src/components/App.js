@@ -1,15 +1,17 @@
 import './App.css';
-import ToDoApp from "./containers/ToDoApp";
 import {Provider} from "react-redux";
 import store from "./reducers/store";
+import Login from "./containers/Login";
+import ToDoApp from "./containers/ToDoApp";
 
 function App() {
 
 
     return (
-        <div>
+        <div className="container mt-5">
             <Provider store={store}>
-                <ToDoApp />
+                <Login/>
+                <ToDoApp/>
             </Provider>,
 
         </div>
