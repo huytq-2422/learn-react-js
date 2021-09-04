@@ -1,7 +1,6 @@
 import {connect} from "react-redux";
 import ToDoApp from "../components/ToDoApp";
 import {addTodo, fetchTodos, setTodos} from "../reducers/todo";
-import axios from "axios";
 
 const mapStateToProps = (state) => {
     return {

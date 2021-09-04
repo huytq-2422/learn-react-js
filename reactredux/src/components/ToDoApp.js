@@ -30,8 +30,11 @@ function ToDoApp(props) {
             </InputGroup>
             <ListGroup className="mt-5">
                 {
-                    props.todos.map(item => <ListGroupItem className="justify-content-between"
-                                                           id={item.id}> {item.title} </ListGroupItem>)
+                    props.todos.map(item => (
+                        <ListGroupItem key={item.id} className="justify-content-between">
+                            {item.title}
+                        </ListGroupItem>
+                    ))
 
                 }
             </ListGroup>
